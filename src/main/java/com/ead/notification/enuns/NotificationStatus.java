@@ -1,6 +1,6 @@
 package com.ead.notification.enuns;
 
 public enum NotificationStatus {
-    CREATE,
+    CREATED,
     READ;
 }

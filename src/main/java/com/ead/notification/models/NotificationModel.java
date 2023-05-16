@@ -63,14 +63,6 @@ public class NotificationModel implements Serializable {
         this.message = message;
     }
 
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
     public LocalDateTime getCreationDate() {
         return creationDate;
     }

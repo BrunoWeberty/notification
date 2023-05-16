@@ -28,8 +28,8 @@ spring:
   output:
     ansi:
       enabled: Always
-    rabbitmq:
-      addresses: amqps://izkhkblw:bRmAhYrhR0aG3Cim38W4ZY0h5URG4e28@whale.rmq.cloudamqp.com/izkhkblw
+  rabbitmq:
+    addresses: amqps://izkhkblw:bRmAhYrhR0aG3Cim38W4ZY0h5URG4e28@whale.rmq.cloudamqp.com/izkhkblw
 
 logging:
   level:
@@ -39,7 +39,15 @@ logging:
     org.hibernate: INFO
 
 
-# inserir broker properties
+ead:
+  broker:
+    exchange:
+      notificationCommandExchange: ead.notificationcommand
+    queue:
+      notificationCommandQueue:
+        name: ead.notificationcommand.ms.notification
+    key:
+      notificationCommandKey: ms.notification
 
 management:
   endpoints:
